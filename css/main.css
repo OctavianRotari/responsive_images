@@ -1,0 +1,35 @@
+/*
+
+Your styles go here!
+
+Hint! You'll probably want to start by styling:
+  * <body>
+  * <article>
+  * <h1>
+  * <img>
+
+I've left some boilerplate below for you.
+
+*/
+
+body {
+}
+
+.row {
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+}
+
+article {
+  width: 100%;
+}
+
+h1 {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
