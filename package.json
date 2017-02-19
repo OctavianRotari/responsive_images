@@ -12,10 +12,12 @@
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-nodeunit": "~0.4.1",
     "grunt-contrib-uglify": "~0.5.0",
-    "grunt-mkdir": "~0.1.2"
+    "grunt-mkdir": "~0.1.2",
+    "local-web-server": "^1.2.6"
   },
   "dependencies": {
-    "grunt-responsive-images": "^0.1.6"
+    "grunt-responsive-images": "^0.1.6",
+    "ws": "^2.0.3"
   },
   "description": "## Your Goals: ##",
   "bugs": {
