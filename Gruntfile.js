@@ -17,6 +17,14 @@ module.exports = function(grunt) {
             width: 800,
             suffix: 'large',
             quality: 30
+          },{
+            width: 640,
+            suffix: 'medium',
+            quality: 30
+          },{
+            width: 320,
+            suffix: 'small',
+            quality: 30
           }
           ]
         },

@@ -3,14 +3,16 @@
 Your styles go here!
 
 Hint! You'll probably want to start by styling:
-  * <body>
-  * <article>
-  * <h1>
-  * <img>
+ * <body>
+ * <article>
+ * <h1>
+ * <img>
 
-I've left some boilerplate below for you.
+ I've left some boilerplate below for you.
 
-*/
+ */
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
 
 body {
 }
@@ -23,6 +25,12 @@ body {
 
 article {
   width: 100%;
+  border-bottom: 1px solid black;
+}
+
+svg {
+  width: 4.5em;
+  height: 5em;
 }
 
 h1 {
@@ -31,5 +39,31 @@ h1 {
 }
 
 img {
+  margin: 0 auto;
   max-width: 100%;
+}
+
+footer ul{
+  padding: 0;
+}
+
+footer li{
+  list-style: none;
+  display: inline;
+}
+
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+  text-shadow: 3px 3px 3px #aaa;
+  font-size: 2em;
+  padding: 10px;
+}
+
+footer a[class*="zocial-"] {
+  color: #34495e;
+  text-decoration: none;
+}
+
+footer a[class*="zocial-"]:hover {
+  color: #16a085;
 }
