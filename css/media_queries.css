@@ -1,0 +1,11 @@
+@media only screen and (max-width: 640px){
+  .row {
+    width: 640px;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .row {
+    width: 320px;
+  }
+}

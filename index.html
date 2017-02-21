@@ -13,6 +13,7 @@
 		<base target="_blank">
 		<title>My responsive blog: picture story</title>
 		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/media_queries.css" />
 	</head>
 	<body>
 		<div class="row">
@@ -29,9 +30,9 @@
 		<div class="row">
 			<article>
 				<picture>
-					<source srcset="images/still_life-320small.jpg" media="(max-width: 320px)">
-					<source srcset="images/still_life-640medium.jpg" media="(max-width: 640px)">
-					<img src="images/still_life-800large.jpg" alt="still_life">
+					<source srcset="images/still_life-320small_1x.jpg 1x, images/still_life-320small_2x.jpg 2x" media="(max-width: 320px)">
+					<source srcset="images/still_life-640medium_1x.jpg 1x, images/still_life-640medium_2x.jpg 2x" media="(max-width: 640px)">
+					<img src="images/still_life-800large_1x.jpg" srcset="images/still_life-800large_2x.jpg 2x" alt="still_life">
 					<figcaption>Fruits</figcaption>
 				</picture>
 				<h2>My story</h2>
