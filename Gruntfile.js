@@ -10,7 +10,21 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
 
+  var config = grunt.file.readYAML('Gruntconfig.yml');
+
   grunt.initConfig({
+    sass: {
+      dist: {
+        src: config.scssDir+'main.scss',
+        dest: config.cssDir+'main.css'
+      }
+    },
+    watch: {
+      sass: {
+        files: config.scssDir+'**/*.scss',
+        tasks: ['sass']
+      }
+    },
     responsive_images: {
       dev: {
         options: {
@@ -68,6 +82,6 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.registerTask('default', ['clean', 'mkdir', 'responsive_images']);
+  grunt.registerTask('default', ['sass', 'clean', 'mkdir', 'responsive_images', 'watch']);
 
 };
