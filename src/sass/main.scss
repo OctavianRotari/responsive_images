@@ -10,18 +10,31 @@ a:hover [class*="zocial-"]:before {
   color: #3d85c6;
 }
 
-div#social a {
-  margin: 0 1em 0 0;
-}
 
-div#social a:last-of-type {
-  margin: 0;
+section {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 2em;
 }
 
 article {
+  width: 100%;
+  display: flex;
   margin: 0 auto;
-  max-width: 50em;
   border-bottom: 1px solid #ddd;
+}
+
+article {
+  picture {
+    width: 50%;
+  }
+
+  .text-content {
+    width: 50%;
+    padding-left: 1em;
+    text-align: center;
+  }
+
 }
 
 body {
@@ -44,14 +57,33 @@ figure {
 
 footer {
   margin: 0 auto;
-  width: 800px;
+  max-width: 1140px;
+  text-align: center;
+}
+
+footer {
+  div#social{
+    margin-bottom: 2em;
+  }
+  div#social{
+
+    a {
+      margin: 0 1em 0 0;
+    }
+
+    a:last-of-type {
+      margin: 0;
+    }
+  }
 }
 
 header {
   display: flex;
   flex-wrap: nowrap;
   margin: 0 auto;
-  width: 800px;
+  max-width: 1140px;
+  margin-bottom: 2em;
+  box-shadow: 3px 3px 3px 3px #aaa;
 }
 
 h1 {
