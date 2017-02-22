@@ -1,2 +1,4 @@
 scssDir: src/sass/
 cssDir: dist/css/
+imagesSrcDir: images_src/
+imagesDir: images/

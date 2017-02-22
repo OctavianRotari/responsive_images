@@ -1,0 +1,20 @@
+@media only screen and (max-width: 600px){
+
+  .row {
+    width: 100%;
+  }
+
+  article {
+    flex-wrap: wrap;
+  }
+
+  article {
+    picture {
+      width: 100%;
+    }
+
+    .text-content {
+      width: 100%;
+    }
+  }
+}

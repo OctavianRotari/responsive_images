@@ -15,8 +15,11 @@ module.exports = function(grunt) {
   grunt.initConfig({
     sass: {
       dist: {
-        src: config.scssDir+'main.scss',
-        dest: config.cssDir+'main.css'
+        expand: true,
+        cwd: config.scssDir,
+        src: ['*.scss'],
+        dest: config.cssDir,
+        ext: '.css'
       }
     },
     watch: {
@@ -30,24 +33,16 @@ module.exports = function(grunt) {
         options: {
           engine: 'im',
           sizes: [{
-            width: 1600,
-            suffix: '_large_2x',
+            width: 1140,
             quality: 30
           },{
-            width: 800,
-            suffix: '_large_1x',
+            width: 570,
             quality: 30
           },{
             width: 1200,
-            suffix: '_medium_2x',
             quality: 30
           },{
             width: 600,
-            suffix: '_medium_1x',
-            quality: 30
-          },{
-            width: 400,
-            suffix: '_small_1x',
             quality: 30
           }]
         },
